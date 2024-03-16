@@ -19,6 +19,8 @@ function createAndRenderBlog(evt) {
     console.log(blogs);
     blogs.push(blog)
     localStorage.setItem('blogs',JSON.stringify(blogs))
+    // redirects to blog.html 
+    window.location.replace('blog.html')
 }
 
 // function to store user input on the console. 
@@ -27,6 +29,14 @@ function submitBlog (evt) {
     console.log(usernameInput.value);
     console.log(titleInput.value);
     console.log(contentInput.value);
+}
+
+function alert () {
+    if (usernameInput === null || titleInput === null || contentInput === null) {
+        alert("Please fill out form")
+    } else {
+        createAndRenderBlog; 
+    }
 }
 
 submit.addEventListener('click', createAndRenderBlog);
