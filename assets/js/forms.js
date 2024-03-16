@@ -30,7 +30,7 @@ function submitBlog (evt) {
     console.log(titleInput.value);
     console.log(contentInput.value);
 }
-
+// creates an alert if form is empty 
 function alert () {
     if (usernameInput === null || titleInput === null || contentInput === null) {
         alert("Please fill out form")
