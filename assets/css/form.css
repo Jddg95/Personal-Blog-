@@ -1,0 +1,16 @@
+.dot {
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.nav-dot {
+    display: flex;
+    justify-content: end;
+    color: orange;
+    font-size: large;
+}
+
+
